@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.faq-contenedor {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-header h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.faq-header p {
+    color: #7f8c8d;
+}
+
+/* Estilos del Acordeón */
+details {
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Efecto cuando está abierto */
+details[open] {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-color: #3498db;
+}
+
+summary {
+    background-color: #fafafa;
+    padding: 18px 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #2c3e50;
+    list-style: none; /* Intenta quitar la flecha nativa en algunos navegadores */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none; /* Quita la flecha nativa en Chrome/Safari */
+}
+
+/* Truco CSS para hacer nuestra propia flecha o símbolo "+" */
+summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: #3498db;
+    transition: transform 0.3s;
+}
+
+details[open] summary::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+details[open] summary {
+    background-color: #ebf5fb; /* Fondo azul clarito al abrir */
+    color: #3498db;
+}
+
+.respuesta {
+    padding: 20px;
+    background-color: white;
+    color: #555;
+    line-height: 1.6;
+    border-top: 1px solid #eee;
+}
