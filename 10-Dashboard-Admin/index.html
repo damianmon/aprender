@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Appwise</title>
+  </head>
+  <body>
+    <aside>
+      <h2>Appwise Admin</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Usuarios</a></li>
+          <li><a href="#">Reportes</a></li>
+          <li><a href="#">Configuración</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <header>
+        <input type="search" placeholder="Buscar en el panel" />
+        <img src="assets/avatar.png" alt="" width="30" />
+        <span>Admin</span>
+      </header>
+      <section>
+        <article>
+          <h3>Usuarios Activos</h3>
+          <p>1,250</p>
+        </article>
+        <article>
+          <h3>Ventas del mes</h3>
+          <p>14,500</p>
+        </article>
+        <article>
+          <h3>Tickets Pendientes</h3>
+          <p>8</p>
+        </article>
+      </section>
+      <section>
+        <h2>Actividad Reciente</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Usuarios</th>
+              <th>Accion</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>15 Oct. 10:30</td>
+              <td>Carlos.dev</td>
+              <td>Subio un nuevo proyecto</td>
+              <td>Completado</td>
+            </tr>
+            <tr>
+              <td>15 Oct. 09:15</td>
+              <td>ana.ui</td>
+              <td>Actualizó perfil</td>
+              <td>Completado</td>
+            </tr>
+            <tr>
+              <td>14 Oct. 18:45</td>
+              <td>juan.perez</td>
+              <td>intento de pago</td>
+              <td>Faliido</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <dialog open="">
+      <h3>Añadir Nuevo Usuario</h3>
+      <form>
+        <input type="text" placeholder="Nombre" />
+        <button>Guardar</button>
+        <button>Cancelar</button>
+      </form>
+    </dialog>
+  </body>
+</html>
