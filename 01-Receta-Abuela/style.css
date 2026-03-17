@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  text-align: center;
+  color: red;
+  margin: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 20px;
+}
+.imagen {
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.ingredientes {
+  color: red;
+  margin-left: 25%;
+  margin-bottom: 20px;
+}
+.list {
+  margin-left: 26%;
+  margin-bottom: 20px;
+}
+.end {
+  text-align: center;
+  color: red;
+}
+.linea {
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid red;
+}
