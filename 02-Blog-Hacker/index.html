@@ -4,35 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Hacker</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Terminal Web - El Blog del Dev</h1>
+      <h1 class="title">Terminal Web - El Blog del Dev</h1>
       <nav>
-        <ul>
-          <li><a href="">#Inicio</a></li>
-          <li><a href="">#Articulos</a></li>
-          <li><a href="">#Contactos</a></li>
+        <ul class="list">
+          <li><a href="Inicio" class="btn">Inicio</a></li>
+          <li><a href="Articulos" class="btn">Articulos</a></li>
+          <li><a href="Contactos" class="btn">Contactos</a></li>
         </ul>
       </nav>
-      <main>
-        <article>
-          <h2>Cómo sobrevivir al CSS sin volverse loco</h2>
-          <p>Escrito por Neo - 15 de Octubre</p>
-          <figure>
-            <img src="assets/hacker-setup.jpg" alt="" />
-            <figcaption>Un desarrollador intentando centrar un div</figcaption>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            voluptatum consequatur sapiente explicabo commodi, iste soluta optio
-            a ullam. Optio sunt tenetur eaque facere repellat ea delectus, rem
-            blanditiis ullam?
-          </figure>
-        </article>
-        <aside>
-          <h3>Sobre el Autor</h3>
-        </aside>
-      </main>
-      <footer>© 2024 Terminal Web. Todos los derechos reservados.</footer>
     </header>
+    <hr class="hr" />
+    <main class="superconteiner">
+      <article class="conteiner">
+        <div class="article">
+          <h2 class="conteiner-title">
+            Cómo sobrevivir al CSS sin volverse loco
+          </h2>
+          <p class="conteiner-text">Escrito por Damian - 15 de Octubre</p>
+          <figure>
+            <div class="conteiner-mid">
+              <img class="imagen" src="assets/hacker-setup.jpg" alt="" />
+              <figcaption class="conteiner-itext">
+                <strong>Un desarrollador intentando centrar un div</strong>
+              </figcaption>
+            </div>
+            <nav>
+              <p class="conteiner-lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit voluptatum consequatur sapiente explicabo commodi, iste
+                soluta optio a ullam. Optio sunt tenetur eaque facere repellat
+                ea delectus, rem blanditiis ullam?
+              </p>
+            </nav>
+          </figure>
+        </div>
+      </article>
+      <aside class="conteiner-sub">
+        <h3 class="conteiner-subtitle">Sobre el Autor</h3>
+        <hr class="hr-mid" />
+        <p class="sub-text">
+          Soy Damian nuevo en programacion, estoy muy ancioso y con todas las
+          ganas de aprender.
+        </p>
+      </aside>
+    </main>
+    <hr class="hr" />
+    <footer class="end">
+      © 2024 Terminal Web. Todos los derechos reservados.
+    </footer>
   </body>
 </html>
