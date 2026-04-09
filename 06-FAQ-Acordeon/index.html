@@ -4,34 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Centro de Ayuda - Appwise</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
+    <main class="app">
       <h1>Preguntas Frecuentes</h1>
-      <p>Resuelve tus dudas rápidamente.</p>
+      <p class="sub">Resuelve tus dudas rápidamente.</p>
+
+      <section class="faq">
+        <div class="item active">
+          <button class="pregunta">
+            ¿Necesito experiencia previa para hacer el curso?
+            <span>-</span>
+          </button>
+          <p class="respuesta">
+            No, empezamos desde cero. Solo necesitas una computadora, conexión a
+            internet y muchas ganas de aprender a romper cosas (y arreglarlas).
+          </p>
+        </div>
+
+        <div class="item">
+          <button class="pregunta">
+            ¿Cuánto tiempo dura la carrera Full Stack?
+            <span>+</span>
+          </button>
+          <p class="respuesta">
+            El programa completo dura 9 meses, con clases en vivo y proyectos
+            prácticos semanales.
+          </p>
+        </div>
+
+        <div class="item">
+          <button class="pregunta">
+            ¿Las clases quedan grabadas?
+            <span>+</span>
+          </button>
+          <p class="respuesta">
+            ¡Sí! Todas las clases se graban y se suben a la plataforma para que
+            puedas repasarlas cuando quieras.
+          </p>
+        </div>
+      </section>
     </main>
-    <section>
-      <details open>
-        <summary>¿Necesito experiencia previa para hacer el curso?</summary>
-        <p>
-          No, empezamos desde cero. Solo necesitas una computadora y ganas de
-          aprender.
-        </p>
-      </details>
-      <details>
-        <summary>¿Cuánto tiempo dura la carrera Full Stack?</summary>
-        <p>
-          El programa completo dura 9 meses, con clases en vivo y proyectos
-          prácticos semanales
-        </p>
-      </details>
-      <details>
-        <summary>¿Las clases quedan grabadas?</summary>
-        <p>
-          ¡Sí! Todas las clases se graban y se suben a la plataforma para que
-          puedas repasarlas cuando quieras.
-        </p>
-      </details>
-    </section>
+
+    <script src="app.js"></script>
   </body>
 </html>

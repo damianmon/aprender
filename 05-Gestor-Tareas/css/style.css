@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* fondo */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* card */
+.app {
+  background: #eaeaea;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* input + botón */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* botón agregar */
+#btnAgregar {
+  background: #4f7df3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btnAgregar:hover {
+  background: #3c66d6;
+}
+
+/* lista */
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* item */
+.lista li {
+  display: flex;
+  align-items: center;
+  background: #dcdcdc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* texto */
+.lista span {
+  flex: 1;
+  margin-left: 8px;
+}
+
+/* completadas */
+.completada span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* botón eliminar */
+.btn-eliminar {
+  background: none;
+  border: none;
+  color: crimson;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* footer */
+.footer {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* botón limpiar */
+#btnLimpiar {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}

@@ -4,58 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Directorio de Empleados</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
+    <main class="app">
       <h1>Directorio Interno - Appwise</h1>
-      Listado actualizado del personal del equipo de desarrollo
-      <table border="1">
+      <p class="sub">
+        Listado actualizado del personal del equipo de desarrollo.
+      </p>
+
+      <table>
         <thead>
           <tr>
             <th>ID</th>
-            <th>Nombre</th>
+            <th>Nombre Completo</th>
             <th>Puesto</th>
-            <th>Email</th>
+            <th>Email Corporativo</th>
           </tr>
         </thead>
-        <tbody>
+
+        <tbody id="tabla-body">
           <tr>
             <td>#001</td>
-            <td>Ana Gómez</td>
+            <td><strong>Ana Gómez</strong></td>
             <td>Frontend Developer</td>
-            <td><a href="mailto:ana@appwise.com">ana@appwise.com></a></td>
+            <td><a href="mailto:ana@appwise.com">ana@appwise.com</a></td>
           </tr>
+
           <tr>
             <td>#002</td>
-            <td>Juan Lobo</td>
-            <td>Frontend Developer</td>
-            <td>
-              <a href="mailto:lobo.0002@appwise.com">lobo.0002@appwise.com></a>
-            </td>
+            <td><strong>Carlos Ruiz</strong></td>
+            <td>Backend Developer</td>
+            <td><a href="mailto:carlos@appwise.com">carlos@appwise.com</a></td>
           </tr>
+
           <tr>
             <td>#003</td>
-            <td>Pedro Picapiedras</td>
-            <td>Backend Developer</td>
-            <td>
-              <a href="mailto:Srpiedra123@appwise.com"
-                >Srpiedra123@appwise.com></a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>#004</td>
-            <td>Lara Roldan</td>
-            <td>Backend Developer</td>
-            <td><a href="mailto:lara@appwise.com">lara@appwise.com"></a></td>
+            <td><strong>Laura Silva</strong></td>
+            <td>UI/UX Designer</td>
+            <td><a href="mailto:laura@appwise.com">laura@appwise.com</a></td>
           </tr>
         </tbody>
+
         <tfoot>
           <tr>
-            <td colspan="4">Total de empleados:4</td>
+            <td colspan="4" id="total"></td>
           </tr>
         </tfoot>
       </table>
     </main>
+
+    <script src="app.js"></script>
   </body>
 </html>

@@ -4,80 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Panel - Appwise</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <aside>
-      <h2>Appwise Admin</h2>
-      <nav>
-        <ul>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Usuarios</a></li>
-          <li><a href="#">Reportes</a></li>
-          <li><a href="#">Configuración</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <main>
-      <header>
-        <input type="search" placeholder="Buscar en el panel" />
-        <img src="assets/avatar.png" alt="" width="30" />
-        <span>Admin</span>
-      </header>
-      <section>
-        <article>
-          <h3>Usuarios Activos</h3>
-          <p>1,250</p>
-        </article>
-        <article>
-          <h3>Ventas del mes</h3>
-          <p>14,500</p>
-        </article>
-        <article>
-          <h3>Tickets Pendientes</h3>
-          <p>8</p>
-        </article>
-      </section>
-      <section>
-        <h2>Actividad Reciente</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Fecha</th>
-              <th>Usuarios</th>
-              <th>Accion</th>
-              <th>Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>15 Oct. 10:30</td>
-              <td>Carlos.dev</td>
-              <td>Subio un nuevo proyecto</td>
-              <td>Completado</td>
-            </tr>
-            <tr>
-              <td>15 Oct. 09:15</td>
-              <td>ana.ui</td>
-              <td>Actualizó perfil</td>
-              <td>Completado</td>
-            </tr>
-            <tr>
-              <td>14 Oct. 18:45</td>
-              <td>juan.perez</td>
-              <td>intento de pago</td>
-              <td>Faliido</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-    <dialog open="">
-      <h3>Añadir Nuevo Usuario</h3>
-      <form>
-        <input type="text" placeholder="Nombre" />
-        <button>Guardar</button>
-        <button>Cancelar</button>
-      </form>
-    </dialog>
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>🚀 Appwise Admin</h2>
+        <nav>
+          <ul>
+            <li class="active">📊 Dashboard</li>
+            <li>👥 Usuarios</li>
+            <li>📁 Reportes</li>
+            <li>⚙️ Configuración</li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <input type="search" placeholder="Buscar en el panel..." />
+          <div class="user">
+            <span>Hola, <strong>Admin</strong></span>
+            <img src="assets/avatar.png" alt="" />
+          </div>
+        </header>
+        <section class="resumen">
+          <h1>Resumen General</h1>
+
+          <div class="cards">
+            <div class="card">
+              <h4>USUARIOS ACTIVOS</h4>
+              <p class="numero">1,250</p>
+              <span class="ok">+5% esta semana</span>
+            </div>
+
+            <div class="card">
+              <h4>VENTAS DEL MES</h4>
+              <p class="numero">$14,500</p>
+              <span class="ok">+12% esta semana</span>
+            </div>
+
+            <div class="card">
+              <h4>TICKETS PENDIENTES</h4>
+              <p class="numero">8</p>
+              <span class="alert">Requiere atención</span>
+            </div>
+          </div>
+        </section>
+        <section class="tabla">
+          <h2>Actividad Reciente</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>FECHA</th>
+                <th>USUARIO</th>
+                <th>ACCIÓN</th>
+                <th>ESTADO</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>15 Oct, 10:30</td>
+                <td>carlos.dev</td>
+                <td>Subió un nuevo proyecto</td>
+                <td><span class="badge ok">Completado</span></td>
+              </tr>
+
+              <tr>
+                <td>15 Oct, 09:15</td>
+                <td>ana.ui</td>
+                <td>Actualizó perfil</td>
+                <td><span class="badge ok">Completado</span></td>
+              </tr>
+
+              <tr>
+                <td>14 Oct, 18:45</td>
+                <td>juan.perez</td>
+                <td>Intento de pago</td>
+                <td><span class="badge error">Fallido</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
