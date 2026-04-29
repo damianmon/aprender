@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oráculo — Adivina el número</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🔮 El Oráculo</h1>
+    <p>Estoy pensando un número entre 1 y 100. ¿Podés adivinarlo?</p>
+    <input type="number" id="inputNumero" placeholder="??" min="1" max="100" />
+    <button onclick="adivinar()">Adivinar</button>
+    <p id="mensaje"></p>
+    <p id="intentos"></p>
+    <button
+      id="btnReset"
+      onclick="reiniciar()"
+      style="display: none; background: #374151"
+    >
+      Jugar de nuevo
+    </button>
+
+    <script src="juego.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>🚀 Mi Panel</h2>
+        <ul>
+          <li id="dashboard" class="active">📊 Dashboard</li>
+          <li id="proyectos">📁 Proyectos</li>
+          <li id="juegos">🎮 Juegos</li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <input type="search" placeholder="Buscar en el panel..." />
+
+          <div class="user">
+            <span>Hola, <strong id="nombreUsuario">Admin</strong></span>
+            <img src="assets/avatar.png" alt="avatar" />
+          </div>
+        </header>
+
+        <div id="contenido">
+          <h1>Bienvenido</h1>
+          <p>Seleccioná una sección</p>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

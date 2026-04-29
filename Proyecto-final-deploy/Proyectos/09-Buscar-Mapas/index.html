@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sucursales - Appwise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Encuentra tu tienda más cercana</h1>
+      <p>Visítanos para probar nuestros equipos en persona.</p>
+    </header>
+
+    <main class="contenedor">
+      <section class="mapa">
+        <iframe
+          id="mapaFrame"
+          src="https://www.google.com/maps?q=-26.833144,-65.206448&z=15&output=embed"
+          loading="lazy"
+        >
+        </iframe>
+      </section>
+
+      <aside class="sucursales">
+        <h2>Nuestras Sucursales</h2>
+
+        <div class="sucursal">
+          <h3>📍 Sucursal Centro</h3>
+          <p>Av. Corrientes 1234, CABA</p>
+          <p class="horario">Lunes a Viernes: 9:00 - 20:00</p>
+          <button data-coord="-26.833144,-65.206448">Cómo llegar</button>
+        </div>
+
+        <div class="sucursal">
+          <h3>📍 Sucursal Norte</h3>
+          <p>Av. Cabildo 4500, CABA</p>
+          <p class="horario">Lunes a Sábados: 10:00 - 19:00</p>
+          <button data-coord="-26.820000,-65.200000">Cómo llegar</button>
+        </div>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
