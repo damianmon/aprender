@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Buscador Flix</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #222;
+        color: white;
+        text-align: center;
+      }
+      input {
+        padding: 10px;
+        font-size: 1.2rem;
+        margin: 20px;
+        width: 300px;
+        border-radius: 5px;
+      }
+      #contenedor-peliculas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+      .tarjeta {
+        background: #333;
+        padding: 15px;
+        border-radius: 8px;
+        width: 200px;
+        border: 1px solid #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎬 Buscador Flix</h1>
+    <input
+      type="text"
+      id="input-busqueda"
+      placeholder="Buscar película por nombre..."
+    />
+
+    <div id="contenedor-peliculas"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

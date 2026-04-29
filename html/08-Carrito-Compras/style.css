@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #dcdcdc;
+}
+
+.header {
+  background: #0f1f3d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.header button {
+  background: orange;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contenedor {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+}
+
+.productos {
+  flex: 3;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #eee;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  background: #3b6df6;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.carrito {
+  flex: 1;
+  background: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carrito ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrito li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.carrito button {
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.finalizar {
+  background: green;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+}

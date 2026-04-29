@@ -4,19 +4,64 @@
 
 let proyectos = [
   {
-    nombre: "Buscar Mapas",
-    url: "proyectos/09-Buscar-Mapas/index.html",
+    nombre: "Receta de la Abuela",
+    url: "proyectos/01-Receta-Abuela/index.html",
+  },
+  {
+    nombre: "Blog del Hacker",
+    url: "proyectos/02-Blog-Hacker/index.html",
+  },
+  {
+    nombre: "Registro de usuario",
+    url: "proyectos/03-Registro-Usuario/index.html",
+  },
+  {
+    nombre: "Landing",
+    url: "proyectos/04-Landign-Producto/index.html",
   },
   {
     nombre: "Gestor de Tareas",
     url: "proyectos/05-Gestor-Tareas/index.html",
   },
+  {
+    nombre: "FAQ",
+    url: "proyectos/06-FAQ-Acordeon/index.html",
+  },
+  {
+    nombre: "Directorio de empleados",
+    url: "proyectos/07-Directorio-Empleados/index.html",
+  },
+  {
+    nombre: "Carrito de compras",
+    url: "proyectos/08-Carrito-Compras/index.html",
+  },
+  {
+    nombre: "Buscar Mapas",
+    url: "proyectos/09-Buscar-Mapas/index.html",
+  },
+
+  {
+    nombre: "Dashboard",
+    url: "proyectos/10-Dashboard-Admin/index.html",
+  },
 ];
 
 let juegos = [
   {
-    nombre: "Videojuego Oráculo",
+    nombre: "Oráculo",
     url: "Juegos/Videojuego-Oraculo/index.html",
+  },
+  {
+    nombre: "Piedra, Papel o tijeras",
+    url: "Juegos/PPT/index.html",
+  },
+  {
+    nombre: "Memotest",
+    url: "Juegos/Memotest/index.html",
+  },
+  {
+    nombre: "Buscador de Peliculas",
+    url: "Juegos/Buscador-peliculas/index.html",
   },
 ];
 

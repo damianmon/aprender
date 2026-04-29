@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🪨 📄 ✂️ Piedra, Papel o Tijera</h1>
+    <p class="subtitulo">Elegí tu arma 👇</p>
+
+    <!-- Marcador -->
+    <div class="marcador">
+      <div>
+        <span id="puntajeJugador">0</span>
+        <label>Vos</label>
+      </div>
+      <div>
+        <span id="puntajeEmpate">0</span>
+        <label>Empate</label>
+      </div>
+      <div>
+        <span id="puntajePC">0</span>
+        <label>PC</label>
+      </div>
+    </div>
+
+    <!-- Botones de elección -->
+    <div class="opciones">
+      <button class="btn-opcion" onclick="jugar('piedra')" title="Piedra">
+        🪨
+      </button>
+      <button class="btn-opcion" onclick="jugar('papel')" title="Papel">
+        📄
+      </button>
+      <button class="btn-opcion" onclick="jugar('tijera')" title="Tijera">
+        ✂️
+      </button>
+    </div>
+
+    <!-- Arena visual -->
+    <div class="arena">
+      <div class="jugador">
+        <div class="eleccion" id="eleccionJugador">❓</div>
+        <span>Vos</span>
+      </div>
+      <span class="vs">VS</span>
+      <div class="computadora">
+        <div class="eleccion" id="eleccionPC">❓</div>
+        <span>Computadora</span>
+      </div>
+    </div>
+
+    <!-- Mensaje de resultado -->
+    <p id="resultado"></p>
+
+    <!-- Reset -->
+    <button id="btnReset" onclick="reiniciar()">Reiniciar marcador</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>

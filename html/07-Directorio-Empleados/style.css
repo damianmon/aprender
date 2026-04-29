@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* card */
+.app {
+  background: #eaeaea;
+  padding: 30px;
+  border-radius: 12px;
+  width: 700px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* título */
+h1 {
+  margin-bottom: 5px;
+}
+
+.sub {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* encabezado */
+thead {
+  background: #d5d9df;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* filas */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* links */
+a {
+  color: #4f7df3;
+  text-decoration: none;
+}
+
+/* footer */
+tfoot td {
+  text-align: center;
+  padding: 12px;
+  background: #d5d9df;
+  font-size: 14px;
+}
