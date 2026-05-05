@@ -63,6 +63,18 @@ let juegos = [
     nombre: "Buscador de Peliculas",
     url: "Juegos/Buscador-peliculas/index.html",
   },
+  {
+    nombre: "Ping Pong",
+    url: "Juegos/Pingpong/index.html",
+  },
+  {
+    nombre: "Clicker",
+    url: "Juegos/Clicker/index.html",
+  },
+  {
+    nombre: "Coliciones",
+    url: "Juegos/Colisiones/index.html",
+  },
 ];
 
 // =======================
@@ -85,10 +97,8 @@ function renderLista(lista, tipo) {
         ${lista
           .map(
             (item) => `
-          <div class="item">
-            <span onclick="abrirJuego('${item.url}')">
-              ${item.nombre}
-            </span>
+          <div class="item" onclick="abrirJuego('${item.url}')">
+            ${item.nombre}
           </div>
         `,
           )
@@ -106,9 +116,22 @@ function abrirJuego(url) {
   contenido.innerHTML = `
     <div class="panel">
       <button onclick="volver()">⬅ Volver</button>
-      <iframe src="${url}"></iframe>
+      <iframe id="visor" src="${url}"></iframe>
     </div>
   `;
+
+  const iframe = document.getElementById("visor");
+
+  iframe.onload = () => {
+    try {
+      const doc = iframe.contentWindow.document;
+      const altura = doc.body.scrollHeight;
+      iframe.style.height = altura + "px";
+    } catch (e) {
+      // Por seguridad (si falla por rutas externas)
+      iframe.style.height = "650px";
+    }
+  };
 }
 
 // =======================
