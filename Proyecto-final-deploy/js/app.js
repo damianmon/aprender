@@ -5,44 +5,44 @@
 let proyectos = [
   {
     nombre: "Receta de la Abuela",
-    url: "proyectos/01-Receta-Abuela/index.html",
+    url: "Proyectos/01-Receta-Abuela/index.html",
   },
   {
     nombre: "Blog del Hacker",
-    url: "proyectos/02-Blog-Hacker/index.html",
+    url: "Proyectos/02-Blog-Hacker/index.html",
   },
   {
     nombre: "Registro de usuario",
-    url: "proyectos/03-Registro-Usuario/index.html",
+    url: "Proyectos/03-Registro-Usuario/index.html",
   },
   {
     nombre: "Landing",
-    url: "proyectos/04-Landign-Producto/index.html",
+    url: "Proyectos/04-Landing-Producto/index.html",
   },
   {
     nombre: "Gestor de Tareas",
-    url: "proyectos/05-Gestor-Tareas/index.html",
+    url: "Proyectos/05-Gestor-Tareas/index.html",
   },
   {
     nombre: "FAQ",
-    url: "proyectos/06-FAQ-Acordeon/index.html",
+    url: "Proyectos/06-FAQ-Acordeon/index.html",
   },
   {
     nombre: "Directorio de empleados",
-    url: "proyectos/07-Directorio-Empleados/index.html",
+    url: "Proyectos/07-Directorio-Empleados/index.html",
   },
   {
     nombre: "Carrito de compras",
-    url: "proyectos/08-Carrito-Compras/index.html",
+    url: "Proyectos/08-Carrito-Compras/index.html",
   },
   {
     nombre: "Buscar Mapas",
-    url: "proyectos/09-Buscar-Mapas/index.html",
+    url: "Proyectos/09-Buscar-Mapas/index.html",
   },
 
   {
     nombre: "Dashboard",
-    url: "proyectos/10-Dashboard-Admin/index.html",
+    url: "Proyectos/10-Dashboard-Admin/index.html",
   },
 ];
 
